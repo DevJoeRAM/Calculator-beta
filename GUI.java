@@ -490,15 +490,9 @@ public class GUI extends javax.swing.JFrame {
                 stack.clear();
             }
             case 4 -> {
-                try {
-                    result = stack.stream().reduce((a, b) -> a / b).orElse(0.0);
-                    display.setText(String.valueOf(result));
-                    stack.clear();
-                } catch (ArithmeticException e) {
-                    display.setText("Syntax Error");
-                    JOptionPane.showMessageDialog(null, "Не можна ділити на нуль");
-                    stack.clear();
-                }
+                result = stack.stream().reduce((a, b) -> a / b).orElse(0.0);
+                display.setText(String.valueOf(result));
+                stack.clear();
             }
         }
         stack.clear();
