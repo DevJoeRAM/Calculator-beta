@@ -494,13 +494,13 @@ public class GUI extends javax.swing.JFrame {
                 stack.clear();
             }
             case 4 -> {
-                try {
-                    result = stack.stream().reduce((a, b) -> a / b).orElse(0.0);
+                result = stack.stream().reduce((a, b) -> a / b).orElse(0.0);
+                if (!Double.isInfinite(result)) {
                     display.setText(String.valueOf(result));
                     stack.clear();
-                } catch (ArithmeticException e) {
+                } else {
                     display.setText("Syntax Error");
-                    JOptionPane.showMessageDialog(null, "Не можна ділити на нуль");
+                    JOptionPane.showMessageDialog(null, "На нуль ділити не можна");
                     stack.clear();
                 }
             }
