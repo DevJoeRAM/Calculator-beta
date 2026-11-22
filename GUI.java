@@ -22,6 +22,7 @@ public class GUI extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         this.setResizable(false);
         this.setTitle("Calculator");
+        display.setEditable(false);
     }
 
     Stack<Double> stack = new Stack<>();
@@ -302,6 +303,8 @@ public class GUI extends javax.swing.JFrame {
         display.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         display.setForeground(new java.awt.Color(0, 0, 0));
         display.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        display.setToolTipText("");
+        display.setActionCommand("<Not Set>");
         display.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
