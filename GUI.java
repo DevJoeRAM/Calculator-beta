@@ -41,6 +41,7 @@ public class GUI extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         OffBtn = new javax.swing.JButton();
         eigthBtn = new javax.swing.JButton();
@@ -68,6 +69,8 @@ public class GUI extends javax.swing.JFrame {
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
+
+        jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -418,7 +421,7 @@ public class GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void OffBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OffBtnActionPerformed
-        JOptionPane.showMessageDialog(null, "Гарного дня)");
+        JOptionPane.showMessageDialog(null, "Tenga un buen dia");
         System.exit(0);
     }//GEN-LAST:event_OffBtnActionPerformed
 
@@ -579,6 +582,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton fiveBtn;
     private javax.swing.JButton fourBtn;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
